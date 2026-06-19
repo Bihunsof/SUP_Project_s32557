@@ -82,6 +82,24 @@ public class ContractServiceTests
                 Percentage = 10m,
                 ActiveFrom = today.AddDays(-30),
                 ActiveTo = today.AddDays(30)
+            },
+            new Discount
+            {
+                Id = 3,
+                Name = "Contract promo 5%",
+                OfferType = OfferType.Contract,
+                Percentage = 5m,
+                ActiveFrom = today.AddDays(-30),
+                ActiveTo = today.AddDays(30)
+            },
+            new Discount
+            {
+                Id = 4,
+                Name = "Subscription promo 5%",
+                OfferType = OfferType.Subscription,
+                Percentage = 5m,
+                ActiveFrom = today.AddDays(-30),
+                ActiveTo = today.AddDays(30)
             }
         );
 
